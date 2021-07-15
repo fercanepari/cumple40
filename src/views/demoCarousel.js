@@ -3,13 +3,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ReactVideo } from "reactjs-media";
 import { Carousel } from 'react-responsive-carousel';
 import ReactDOM from 'react-dom';
+import myVideo from '../media/VeoVeo.mp4'
 
 export default class DemoCarousel extends Component {
     render() {
         return (
             <div>
                 
-            <Carousel autoPlay interval={4000} infiniteLoop showThumbs={false}>
+            <Carousel autoPlay interval={40000} infiniteLoop showThumbs={false}>
                 <div>
                     <img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg" alt="" />
                     <p className="legend">React</p>
@@ -24,9 +25,8 @@ export default class DemoCarousel extends Component {
                 </div>
                 <div>
                     <ReactVideo
-                        src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-                        //src="\src\media\VeoVeo.mp4"
-                        poster="./src/media/poster.png"
+                        src={myVideo}
+                        poster="../media/poster.png"
                         
                     />
                 </div>
