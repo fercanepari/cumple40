@@ -33,7 +33,7 @@ export default class Header extends Component {
             <div id='container' className="topnav">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" /> 
-                    <h1 className="App-title">AWS Lambda function</h1>
+                    <h1 className="App-title">Media files</h1>
                 </header>
                 <Link className={carousel} to="Carousel" onClick={() => this.setState({location: 'carousel'})} >Carousel</Link>  
                 
