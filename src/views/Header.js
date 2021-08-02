@@ -33,11 +33,13 @@ export default class Header extends Component {
         return (
             <div id='container' className="topnav">
                 <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" /> 
+                    <img src={logo} alt="logo" /> 
                     <h1 className="App-title">  Felices 40 amor mio!!!  </h1>
                 </header>
                 <Link className={carousel} to="Carousel" onClick={() => this.setState({location: 'carousel'})} >Carousel</Link>  
-                <Link className={videoCumple} to="VideoCumple" onClick={() => this.setState({location: 'videoCumple'})} >Video</Link>     
+                <Link className={videoCumple} to="VideoCumple" onClick={() => this.setState({location: 'videoCumple'})} >Video</Link>
+
+
             </div>
             
         )
