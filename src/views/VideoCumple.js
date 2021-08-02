@@ -8,7 +8,7 @@ export default class VideoCumple extends Component {
     return (
       <div>
             <div>
-                <ReactVideo
+                <ReactVideo type="video/mp4"
                     src={myVideo}
                     poster="../media/poster.png"            
                 />

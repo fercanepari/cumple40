@@ -3,7 +3,7 @@ import logo from '../logo.png';
 import { Link } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import DemoCarousel from './demoCarousel';
-import VideoCumple from './VideoCumple';
+//import VideoCumple from './VideoCumple';
 
 export default class Header extends Component {
     constructor(props) {
