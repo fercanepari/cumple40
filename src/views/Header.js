@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import logo from '../logo.png';
 import { Link } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import DemoCarousel from './demoCarousel';
+import VideoCumple from './VideoCumple';
 
 export default class Header extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ export default class Header extends Component {
     render() {
 
         //const list = this.state.location === "list" ? "active" : "";
-        //const postSimple = this.state.location === "postSimple" ? "active" : "";
+        const videoCumple = this.state.location === "videoCumple" ? "active" : "";
         //const post = this.state.location === "post" ? "active" : "";
         //const formk = this.state.location === "formk" ? "active" : "";
         const carousel = this.state.location === "carousel" ? "active" : "";
@@ -33,10 +34,10 @@ export default class Header extends Component {
             <div id='container' className="topnav">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" /> 
-                    <h1 className="App-title">Media files</h1>
+                    <h1 className="App-title">  Felices 40 amor mio!!!  </h1>
                 </header>
                 <Link className={carousel} to="Carousel" onClick={() => this.setState({location: 'carousel'})} >Carousel</Link>  
-                
+                <Link className={videoCumple} to="VideoCumple" onClick={() => this.setState({location: 'videoCumple'})} >Video</Link>     
             </div>
             
         )

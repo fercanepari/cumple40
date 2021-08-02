@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { ReactVideo } from "reactjs-media";
 import { Carousel } from 'react-responsive-carousel';
 import ReactDOM from 'react-dom';
-import myVideo from '../media/VideoCumpleOk.mp4'
+import jesiImg from '../media/jesi.jpg'
+import jesiImg2 from '../media/jesiFer.jpg'
+import jesiImg3 from '../media/jesiFerSofi.jpg'
+import jesiImg4 from '../media/jesiFerSofi2.jpg'
+import jesiImg5 from '../media/jFSV.jpg'
+import jesiImg6 from '../media/ACESTUDIO1.jpg'
+import jesiImg7 from '../media/ACESTUDIO2.jpg'
+
 
 export default class DemoCarousel extends Component {
     render() {
@@ -12,23 +18,32 @@ export default class DemoCarousel extends Component {
                 
             <Carousel autoPlay interval={40000} infiniteLoop showThumbs={false}>
                 <div>
-                    <img src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg" alt="" />
-                    <p className="legend">React</p>
+                    <img src={jesiImg} alt="" />
+                    <p className="legend">...</p>
                 </div>
                 <div>
-                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg" alt=""  />
-                    <p className="legend">Code</p>
+                    <img src={jesiImg2} alt="" />
+                    <p className="legend">...</p>
                 </div>
                 <div>
-                    <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt=""  />
-                    <p className="legend">Axios</p>
+                    <img src={jesiImg3} alt="" />
+                    <p className="legend">...</p>
                 </div>
                 <div>
-                    <ReactVideo
-                        src={myVideo}
-                        poster="../media/poster.png"
-                        
-                    />
+                    <img src={jesiImg4} alt="" />
+                    <p className="legend">...</p>
+                </div>
+                <div>
+                    <img src={jesiImg5} alt="" />
+                    <p className="legend">...</p>
+                </div>
+                <div>
+                    <img src={jesiImg6} alt="" />
+                    <p className="legend">...</p>
+                </div>
+                <div>
+                    <img src={jesiImg7} alt="" />
+                    <p className="legend">...</p>
                 </div>
             </Carousel>
             </div>

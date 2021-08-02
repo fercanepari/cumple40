@@ -5,6 +5,7 @@ import './App.css';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Header from './views/Header';
 import DemoCarousel from './views/demoCarousel';
+import VideoCumple from './views/VideoCumple';
 
 class App extends Component {
   
@@ -22,7 +23,12 @@ class App extends Component {
             <div className="App">
               <DemoCarousel/>
             </div>
-          )}/>        
+          )}/> 
+          <Route exact={true} path='/VideoCumple' render={() => (
+            <div className="App">
+              <VideoCumple/>
+            </div>
+          )}/>         
         </div>
       </BrowserRouter>
     );
