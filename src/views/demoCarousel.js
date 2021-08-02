@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ReactVideo } from "reactjs-media";
 import { Carousel } from 'react-responsive-carousel';
 import ReactDOM from 'react-dom';
-import myVideo from '../media/VeoVeo.mp4'
+import myVideo from '../media/VideoCumpleOk.mp4'
 
 export default class DemoCarousel extends Component {
     render() {
